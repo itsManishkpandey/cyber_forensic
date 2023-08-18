@@ -1,0 +1,68 @@
+Aim: Password Cracking using Cain and Abel.
+
+This exercise demonstrates how password could be cracked through 		various methods, specifically regarding MD5 encrypted passwords
+Part 1: Dictionary attack - Dictionary attack uses a predetermined list 
+of 	words from a dictionary to generate possible passwords that may
+ match 	the MD5 encrypted password. This is one of the easiest and 
+quickest way to obtain any given password.
+
+Step 1: Start Cain & Abel via the Desktop Shortcut ‘Cain’ or Start menu .
+ 	a. (Start > Programs > Cain > Cain).
+
+Step 2: Choose ‘Yes’ to proceed when a ‘User Account Control’ 
+		notification pops up regarding software authorization
+Step 3: Once on, select the ‘Cracker’ tab with the key symbol, 
+then click 	on MD5 Hashes. The result should look like the image below.
+Step 4: As you might have noticed we don’t have any passwords to crack,
+ thus for the next few steps we will create our own MD5 encrypted passwords. 
+First, locate the Hash Calculator among a row of icons near the top. Open it.
+Step 5: Next, type into ‘Text to Hash’ the word password. It will generate a 
+list of hashes pertaining to different types of hash algorithms. We will be 
+focusing on MD5 hash so copy it. Then exit calculator by clicking ‘Cancel’
+Step 6: After you exit, right click and select ‘Add to list’ , paste your hash
+then click OK . Your first encrypted password! But don’t stop there, add the 
+following MD5 hashes from the words PaSS , 13579, 15473 , sunshine89, and c@t69
+Step 7:  With all the encrypted MD5 passwords on hand, we can finally start! 
+Move your cursor and select all six passwords, then right click and press
+ ‘Dictionary Attack’. 
+Step 8: Once the window opens, go up to the dictionary and select ‘Wordlist.txt’ , right click and select ‘Reset initial file position’. You’ll know you’ve resetted when there’s nothing under the position column. Note: Make sure to do this every time you want to 
+restart a dictionary attack!
+Step 9: Click ‘start’ and watch the magic happens before your eyes! Once it ends ‘exit’ . 
+Your result should be the same as below.
+***************************
+Part 2 : Rainbow Tables - Rainbow tables use pre­calculated MD5 hashes sorted 
+on a 	table(s) to compare to encrypted MD5 files in order to find a match 
+thus cracking the 	password. This type of
+ password cracking trades time and storage capacity.
+***************************
+
+Step 1: Continuation from the previous ‘Dictionary Attack’ section. 
+Cain & Abel should 	already be 
+opened with following MD5 encrypted passwords.
+Step 2: Now with the other half of the passwords still encrypted, 
+we will be using rainbow table attacking to see if we can finally crack them.
+ Select all six passwords, right click, 
+and select ‘Cryptanalysis Attack via RainbowTables’.
+Step 3: A window will pop up and you could see under ‘Sorted Rainbow Tables’ 
+there is already a MD5 rainbow table already added. Notice the specifications 
+for that specific rainbow table. Click ‘Start’ when ready. ‘Exit’ when done.
+
+******
+Part 3: Brute Force - Brute force attacks uses a finite but enormous number 
+of combinations involving alphabet, numbers, and symbols in order to crack a 
+password. This type of password cracking is usually used as a last resort as 
+it’s the most time consuming overall.
+******
+
+Step 1: Continuation from the previous ‘Rainbow Tables’ section. Cain & Abel 
+should already be opened with the following MD5 encrypted passwords.
+Step 2: Now with only two more passwords still encrypted, we will be using 
+brute force attack to see if we can finally crack them. Select all six 
+passwords, right click, and select ‘Brute­Force Attack’.
+Step 3 : Once a window appears we will have to adjust some settings to fit our 
+requirements. Under Charset and Predefined selected, 
+open the drop down bar and select 	the one below the initially selected 
+one. Next, under Password length turn Max down to 5. 
+Step 4: When ready click ‘Start’. Once it’s done calculating ‘Exit’ . Your 
+final results should be the same as below. All of them should be cracked!
+ Yay!	
